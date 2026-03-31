@@ -84,11 +84,13 @@ public class Board {
 
     public void solve() {
         //for each row first
-        for (int i = 0; i < 5; i++) {
-            reduceRow(i);
-        }
-        for (int i = 0; i < 5; i++) {
-            reduceCol(i);
+        for (int j = 0; j < 10; j++) {
+            for (int i = 0; i < 5; i++) {
+                reduceRow(i);
+            }
+            for (int i = 0; i < 5; i++) {
+                reduceCol(i);
+            }
         }
     }
 

@@ -95,7 +95,6 @@ public class Board {
     }
 
     public void reduceCol(int index){
-        System.out.println("");
         int bomb = columnConstraints[index].getBombCount();
         int totalPoints = columnConstraints[index].getPointTotal();
 
@@ -128,7 +127,6 @@ public class Board {
         }
     }
     public void reduceRow(int index){
-        System.out.println("");
         int bomb = rowConstraints[index].getBombCount();
         int totalPoints = rowConstraints[index].getPointTotal();
 
